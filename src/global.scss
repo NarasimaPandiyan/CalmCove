@@ -24,3 +24,9 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://api.fontshare.com/v2/css?f[]=rowan@501,1,701,600,700,400,401,300,2,601,500,301&f[]=quilon@700,400,1,500,600&f[]=stardom@400&display=swap');

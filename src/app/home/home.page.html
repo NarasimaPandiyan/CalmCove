@@ -1,20 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="font-Stardom font-bold text-3xl text-center align-middle drop-shadow-2xl">
+      CalmCove
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content >
+  <div id='chat'  class="flex flex-col">
+    <div class="bg-red-500 rounded-r-xl rounded-t-xl round-b-xl m-3 p-3 font-Quilon self-start w-3/4">
+      Hi, I'm Virtual therapist Created by CalmCove. I'm here to help you with your mental health. How are you feeling today?
+    </div>
   </div>
 </ion-content>
+
+<ion-footer>
+    <input (keyup.enter)="sendMessage()"  id="chat-input" type="text" placeholder="Send it" class="w-10/12 h-10 rounded-lg border-2 border-gray-300 p-2 m-2 text-gray-600 focus:outline-none focus:border-x-zinc-500 col-span-2">
+    <a (click)="sendMessage()" class="p-3 bg-rose-500 rounded-lg "><ion-icon name="send"></ion-icon></a>
+</ion-footer>
